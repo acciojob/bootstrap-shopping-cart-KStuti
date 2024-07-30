@@ -1,16 +1,123 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+	.block-heading{
+		color:#3b99e0;
+		text-align:center;
+	}
+	.col-md-8{
+		border:1px solid #ddd;
+			border-radius:5px;
+			padding:15px;
+			margin-bottom:20px;
+			align-item:left;
+	}
+	.row{
+		display:flex;
+		flex-direction:column;
+	}
+	.col-md-4{
+		display:flex;
+		width:200px;
+	}
+    .headings {
+        color: #3b99e0;
+    }
+    .summary {
+           border:1px solid black;
+			background-color:lightgrey;
+			padding:20px;
+			border-radius:5px;
+			margin-top:10px;
+		text-decoration:underline;
+		}
+    .block-heading {
+        text-align: center;
+    }
+	.img-fluid{
+		height:200px;
+		width:200px;
+	}
+	#input{
+		align-item:right;
+	}
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="product">
+                <h2 class="block-heading">Shopping Cart</h2>
+				<p> The customer is very important, the customer will be followed by the customer.Now, as an urn, I have no right to be in possession of property. </p>
+                <div class="column">
+                    <div class="col-md-4">
+                        <img src="https://m.media-amazon.com/images/I/31p5cVyRLmL._AC_SR360,240_QL70_.jpg" class="img-fluid" alt="Product 1 Image 1">
+                    <div class="col-md-8 product-info">
+							<h3>IPhone 13 pro</h3>
+							<p>Display:5 inches</p>
+							<p>RAM:4GB</p>
+							<p>Memory:32GB</p>
+							<div>
+							<label for="quantity">Quantity:</label>
+								<input type="number" id ="quantity" name="quantity" min="1" value="1">
+							</div>
+							</div>
+						<p><strong>$120</strong></p>
+					</div>
+                    <div class="col-md-4">
+                        <img src="https://m.media-amazon.com/images/I/31p5cVyRLmL._AC_SR360,240_QL70_.jpg" class="img-fluid" alt="Product 1 Image 2">
+                   <div class="col-md-8 product-info">
+							<h3>IPhone 13 pro</h3>
+							<p>Display:5 inches</p>
+							<p>RAM:4GB</p>
+							<p>Memory:32GB</p>
+							<div>
+							<label for="quantity">Quantity:</label>
+								<input type="number" id ="quantity" name="quantity" min="1" value="1">
+							</div>
+							</div>
+						<p><strong>$120</strong></p>
+					</div>
+                    <div class="col-md-4">
+                        <img src="https://m.media-amazon.com/images/I/31p5cVyRLmL._AC_SR360,240_QL70_.jpg" class="img-fluid" alt="Product 1 Image 3">
+                   <div class="col-md-8 product-info">
+							<h3>IPhone 13 pro</h3>
+							<p>Display:5 inches</p>
+							<p>RAM:4GB</p>
+							<p>Memory:32GB</p>
+							<div>
+							<label for="quantity">Quantity:</label>
+								<input type="number" id ="quantity" name="quantity" min="1" value="1">
+							</div>
+							</div>
+						<p><strong>$120</strong></p>
+					</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+				<div class="col-12">
+					<div class="summary">
+						<h3>Summary</h3>
+						<p>Subtotal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1599</p>
+						<p>Discount</p>
+						<p>Shipping</p>
+						<p>Total</p>
+						<button class="btn btn-primary">checkout</button>
+					</div>
+				</div>
+			</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
